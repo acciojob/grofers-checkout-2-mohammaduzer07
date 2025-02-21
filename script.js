@@ -1,7 +1,7 @@
 //your code here
 const table = document.querySelector('table')
 const lastRow = document.createElement('tr')
-const prices = document.querySelectorAll('[data-ns-test=prices]')
+const prices = document.querySelectorAll(`[data-ns-test=price]`)
 
 let sum = 0
 for(let i = 0; i < prices.length; i++){
