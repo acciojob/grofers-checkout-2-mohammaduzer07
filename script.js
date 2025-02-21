@@ -5,12 +5,12 @@ const prices = document.querySelectorAll('[data-ns-test=prices]')
 
 let sum = 0
 for(let i = 0; i < prices.length; i++){
-	sum += parseInt(prices[i].innerText)
+	sum += parseInt(prices[i].textContent)
 }
 
 const newCol = document.createElement('td')
-newCol.innerText = sum
 newCol.setAttribute('data-ns-test', 'grandTotal')
+newCol.textContent = sum
 
 lastRow.appendChild(newCol)
 table.appendChild(lastRow)
